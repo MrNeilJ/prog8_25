@@ -14,7 +14,17 @@ int main()
     for (int &val : numbers)
     {
         cout << "Enter an integer value: ";
-        cin  << val;
-
+        cin  >> val;
     }
+
+    // Display the vector elements
+    cout << "\nHere are the values you entered: \n";
+
+    for (int val : numbers)
+    {
+        cout << val << " ";
+    }
+
+    cout << endl;
+    return 0;
 }
